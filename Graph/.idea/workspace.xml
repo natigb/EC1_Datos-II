@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="untitled1" targetName="Graph" />
+      <config projectName="Graph" targetName="Graph" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -35,10 +35,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
-    <configuration name="Graph" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled1" TARGET_NAME="Graph" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled1" RUN_TARGET_NAME="Graph">
+    <configuration name="Graph" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Graph" TARGET_NAME="Graph" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Graph" RUN_TARGET_NAME="Graph">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -60,7 +60,12 @@
       <workItem from="1582840996496" duration="1301000" />
       <workItem from="1582846318194" duration="2028000" />
       <workItem from="1582858630026" duration="1463000" />
-      <workItem from="1582992434200" duration="931000" />
+      <workItem from="1582992434200" duration="17516000" />
+      <workItem from="1583073302761" duration="2899000" />
+      <workItem from="1583088553476" duration="1962000" />
+      <workItem from="1583092601718" duration="559000" />
+      <workItem from="1583093333913" duration="2582000" />
+      <workItem from="1583102101097" duration="12000" />
     </task>
     <servers />
   </component>
@@ -68,29 +73,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1582863551611">
+    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583010151765">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1582863551611" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1582863551610">
+    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1583010151765" />
+    <state x="499" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1583089437977">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1582863551610" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1582863551610">
+    <state x="499" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1583089437977" />
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1583091286205">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1582863551610" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1582863551610">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583091286205" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1583091286204">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1582863551610" />
-    <state x="195" y="27" key="SettingsEditor" timestamp="1582858683143">
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1583091286204" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1583091286203">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="195" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1582858683143" />
-    <state x="362" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1582992435882">
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1583091286203" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1583091286204">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="362" y="209" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1582992435882" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1583091286204" />
+    <state x="195" y="27" key="SettingsEditor" timestamp="1583075038578">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="195" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1583075038578" />
+    <state x="362" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1583092606107">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="362" y="209" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1583092606107" />
   </component>
 </project>

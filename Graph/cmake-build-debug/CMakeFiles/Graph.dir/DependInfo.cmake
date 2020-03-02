@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/grphv1.cpp" "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/Graph.dir/grphv1.cpp.o"
+  "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.cpp" "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/Graph.dir/Dijkstra.cpp.o"
+  "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Graph.cpp" "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/Graph.dir/Graph.cpp.o"
   "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/main.cpp" "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/Graph.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

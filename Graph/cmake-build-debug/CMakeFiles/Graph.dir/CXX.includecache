@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/main.cpp
-iostream
+/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.cpp
+Dijkstra.h
+/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.h
+stdio.h
 -
-vector
+limits.h
 -
+
+/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.h
 

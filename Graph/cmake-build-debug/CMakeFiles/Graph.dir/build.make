@@ -70,32 +70,47 @@ CMakeFiles/Graph.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graph.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/main.cpp" -o CMakeFiles/Graph.dir/main.cpp.s
 
-CMakeFiles/Graph.dir/grphv1.cpp.o: CMakeFiles/Graph.dir/flags.make
-CMakeFiles/Graph.dir/grphv1.cpp.o: grphv1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Graph.dir/grphv1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Graph.dir/grphv1.cpp.o -c "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/grphv1.cpp"
+CMakeFiles/Graph.dir/Graph.cpp.o: CMakeFiles/Graph.dir/flags.make
+CMakeFiles/Graph.dir/Graph.cpp.o: ../Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Graph.dir/Graph.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Graph.dir/Graph.cpp.o -c "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Graph.cpp"
 
-CMakeFiles/Graph.dir/grphv1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graph.dir/grphv1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/grphv1.cpp" > CMakeFiles/Graph.dir/grphv1.cpp.i
+CMakeFiles/Graph.dir/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graph.dir/Graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Graph.cpp" > CMakeFiles/Graph.dir/Graph.cpp.i
 
-CMakeFiles/Graph.dir/grphv1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graph.dir/grphv1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/grphv1.cpp" -o CMakeFiles/Graph.dir/grphv1.cpp.s
+CMakeFiles/Graph.dir/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graph.dir/Graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Graph.cpp" -o CMakeFiles/Graph.dir/Graph.cpp.s
+
+CMakeFiles/Graph.dir/Dijkstra.cpp.o: CMakeFiles/Graph.dir/flags.make
+CMakeFiles/Graph.dir/Dijkstra.cpp.o: ../Dijkstra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Graph.dir/Dijkstra.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Graph.dir/Dijkstra.cpp.o -c "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.cpp"
+
+CMakeFiles/Graph.dir/Dijkstra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graph.dir/Dijkstra.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.cpp" > CMakeFiles/Graph.dir/Dijkstra.cpp.i
+
+CMakeFiles/Graph.dir/Dijkstra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graph.dir/Dijkstra.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/Dijkstra.cpp" -o CMakeFiles/Graph.dir/Dijkstra.cpp.s
 
 # Object files for target Graph
 Graph_OBJECTS = \
 "CMakeFiles/Graph.dir/main.cpp.o" \
-"CMakeFiles/Graph.dir/grphv1.cpp.o"
+"CMakeFiles/Graph.dir/Graph.cpp.o" \
+"CMakeFiles/Graph.dir/Dijkstra.cpp.o"
 
 # External object files for target Graph
 Graph_EXTERNAL_OBJECTS =
 
 Graph: CMakeFiles/Graph.dir/main.cpp.o
-Graph: CMakeFiles/Graph.dir/grphv1.cpp.o
+Graph: CMakeFiles/Graph.dir/Graph.cpp.o
+Graph: CMakeFiles/Graph.dir/Dijkstra.cpp.o
 Graph: CMakeFiles/Graph.dir/build.make
 Graph: CMakeFiles/Graph.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Graph"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Graph.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

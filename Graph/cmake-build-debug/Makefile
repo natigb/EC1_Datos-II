@@ -123,32 +123,59 @@ Graph/fast:
 	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/build
 .PHONY : Graph/fast
 
-grphv1.o: grphv1.cpp.o
+Dijkstra.o: Dijkstra.cpp.o
 
-.PHONY : grphv1.o
+.PHONY : Dijkstra.o
 
 # target to build an object file
-grphv1.cpp.o:
-	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/grphv1.cpp.o
-.PHONY : grphv1.cpp.o
+Dijkstra.cpp.o:
+	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/Dijkstra.cpp.o
+.PHONY : Dijkstra.cpp.o
 
-grphv1.i: grphv1.cpp.i
+Dijkstra.i: Dijkstra.cpp.i
 
-.PHONY : grphv1.i
+.PHONY : Dijkstra.i
 
 # target to preprocess a source file
-grphv1.cpp.i:
-	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/grphv1.cpp.i
-.PHONY : grphv1.cpp.i
+Dijkstra.cpp.i:
+	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/Dijkstra.cpp.i
+.PHONY : Dijkstra.cpp.i
 
-grphv1.s: grphv1.cpp.s
+Dijkstra.s: Dijkstra.cpp.s
 
-.PHONY : grphv1.s
+.PHONY : Dijkstra.s
 
 # target to generate assembly for a file
-grphv1.cpp.s:
-	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/grphv1.cpp.s
-.PHONY : grphv1.cpp.s
+Dijkstra.cpp.s:
+	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/Dijkstra.cpp.s
+.PHONY : Dijkstra.cpp.s
+
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/Graph.dir/build.make CMakeFiles/Graph.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Graph"
 	@echo "... edit_cache"
-	@echo "... grphv1.o"
-	@echo "... grphv1.i"
-	@echo "... grphv1.s"
+	@echo "... Dijkstra.o"
+	@echo "... Dijkstra.i"
+	@echo "... Dijkstra.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

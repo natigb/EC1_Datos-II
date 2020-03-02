@@ -20,6 +20,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeGenericSystem.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeInitializeConfigs.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake"
+  "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeParseArguments.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -33,6 +34,18 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/UnixPaths.cmake"
   "/home/natigb/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/ProcessorCount.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake"
   )
 
 # The corresponding makefile is:
