@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
            }
        } while(true);
 
-       //	Close the socket
+       //Close the socket
        close(sock);
 
 
