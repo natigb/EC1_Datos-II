@@ -15,7 +15,9 @@ using namespace std;
 #include <limits.h>
 
 
-// A structure to represent a node in adjacency list
+/**
+ * @brief The AdjListNode struct Estructura que representa a un nodo un una lista de adyacencia
+ */
 struct AdjListNode
 {
     int dest;
@@ -24,6 +26,9 @@ struct AdjListNode
 };
 
 // A structure to represent an adjacency list
+/**
+ * @brief The AdjList struct Estructura de la lista de adyacencia, contiene un puntero señalando a la cabeza
+ */
 struct AdjList
 {
     struct AdjListNode *head;  // pointer to head node of list
@@ -31,6 +36,9 @@ struct AdjList
 
 // A structure to represent a graph. A graph is an array of adjacency lists.
 // Size of array will be V (number of vertices in graph)
+/**
+ * @brief The Graph struct Estructura para armar el grafo, contiene una lista de adyacencia y un atributo con el numero de vértices
+ */
 struct Graph
 {
     int V;
@@ -38,6 +46,13 @@ struct Graph
 };
 
 // A utility function to create a new adjacency list node
+/**
+ * @brief newAdjListNode Funcion para crear un nuevo nodo en la lista de adyacencia
+ * @param dest nodo que se agrega
+ * @param weight peso
+ * @return
+ *
+ */
 struct AdjListNode* newAdjListNode(int dest, int weight)
 {
     struct AdjListNode* newNode =
@@ -49,6 +64,11 @@ struct AdjListNode* newAdjListNode(int dest, int weight)
 }
 
 // A utility function that creates a graph of V vertices
+/**
+ * @brief createGraph Estructura para crear un grafo con V vertices
+ * @param V
+ * @return
+ */
 struct Graph* createGraph(int V)
 {
     struct Graph* graph = (struct Graph*) malloc(sizeof(struct Graph));
@@ -65,6 +85,13 @@ struct Graph* createGraph(int V)
 }
 
 // Adds an edge to an undirected graph
+/**
+ * @brief addEdge funcion para agregar una arista nueva
+ * @param graph el grafo al que se le quiere agregar
+ * @param src source
+ * @param dest destination
+ * @param weight peso
+ */
 void addEdge(struct Graph* graph, int src, int dest, int weight)
 {
     // Add an edge from src to dest.  A new node is added to the adjacency
@@ -80,6 +107,9 @@ void addEdge(struct Graph* graph, int src, int dest, int weight)
 }
 
 // Structure to represent a min heap node
+/**
+ * @brief The MinHeapNode struct estructura para representar el min heap node
+ */
 struct MinHeapNode
 {
     int  v;
@@ -87,6 +117,9 @@ struct MinHeapNode
 };
 
 // Structure to represent a min heap
+/**
+ * @brief The MinHeap struct estructura para representar el min heap
+ */
 struct MinHeap
 {
     int size;      // Number of heap nodes present currently
@@ -96,6 +129,12 @@ struct MinHeap
 };
 
 // A utility function to create a new Min Heap Node
+/**
+ * @brief newMinHeapNode estructura para crear un min heap node nuevo
+ * @param v
+ * @param dist
+ * @return
+ */
 struct MinHeapNode* newMinHeapNode(int v, int dist)
 {
     struct MinHeapNode* minHeapNode =
@@ -106,6 +145,11 @@ struct MinHeapNode* newMinHeapNode(int v, int dist)
 }
 
 // A utility function to create a Min Heap
+/**
+ * @brief createMinHeap estructura para crear un min heap
+ * @param capacity
+ * @return
+ */
 struct MinHeap* createMinHeap(int capacity)
 {
     struct MinHeap* minHeap =
@@ -119,6 +163,11 @@ struct MinHeap* createMinHeap(int capacity)
 }
 
 // A utility function to swap two nodes of min heap. Needed for min heapify
+/**
+ * @brief swapMinHeapNode hace swap de 2 nodos
+ * @param a
+ * @param b
+ */
 void swapMinHeapNode(struct MinHeapNode** a, struct MinHeapNode** b)
 {
     struct MinHeapNode* t = *a;
@@ -129,6 +178,11 @@ void swapMinHeapNode(struct MinHeapNode** a, struct MinHeapNode** b)
 // A standard function to heapify at given idx
 // This function also updates position of nodes when they are swapped.
 // Position is needed for decreaseKey()
+/**
+ * @brief minHeapify actualiza la posicion de los nodos del heap
+ * @param minHeap
+ * @param idx
+ */
 void minHeapify(struct MinHeap* minHeap, int idx)
 {
     int smallest, left, right;
@@ -162,12 +216,22 @@ void minHeapify(struct MinHeap* minHeap, int idx)
 }
 
 // A utility function to check if the given minHeap is ampty or not
+/**
+ * @brief isEmpty funcion para saber si el minHeap está vacío
+ * @param minHeap
+ * @return
+ */
 int isEmpty(struct MinHeap* minHeap)
 {
     return minHeap->size == 0;
 }
 
 // Standard function to extract minimum node from heap
+/**
+ * @brief extractMin extrae el nodo minimo del heap
+ * @param minHeap
+ * @return
+ */
 struct MinHeapNode* extractMin(struct MinHeap* minHeap)
 {
     if (isEmpty(minHeap))
@@ -193,6 +257,12 @@ struct MinHeapNode* extractMin(struct MinHeap* minHeap)
 
 // Function to decreasy dist value of a given vertex v. This function
 // uses pos[] of min heap to get the current index of node in min heap
+/**
+ * @brief decreaseKeydisminuye el valor de un vertice
+ * @param minHeap
+ * @param v
+ * @param dist
+ */
 void decreaseKey(struct MinHeap* minHeap, int v, int dist)
 {
     // Get the index of v in  heap array
@@ -217,6 +287,12 @@ void decreaseKey(struct MinHeap* minHeap, int v, int dist)
 
 // A utility function to check if a given vertex
 // 'v' is in min heap or not
+/**
+ * @brief isInMinHeap buscar un vertice en el min heap
+ * @param minHeap
+ * @param v
+ * @return
+ */
 bool isInMinHeap(struct MinHeap *minHeap, int v)
 {
    if (minHeap->pos[v] < minHeap->size)
@@ -225,6 +301,13 @@ bool isInMinHeap(struct MinHeap *minHeap, int v)
 }
 
 // A utility function used to print the solution
+/**
+ * @brief printArr retorna un string de la solucion
+ * @param dist
+ * @param src
+ * @param dest
+ * @return
+ */
 string printArr(int dist[], int src, int dest)
 {
     string answer = "La distancia mas corta entre " + to_string(src)+ " y " + to_string(dest) + " es "+ to_string(dist[dest]);
@@ -241,6 +324,13 @@ string printArr(int dist[], int src, int dest)
 
 // The main function that calulates distances of shortest paths from src to all
 // vertices. It is a O(ELogV) function
+/**
+ * @brief dijkstra calcula la distancia más corta de un nodo a otro
+ * @param graph
+ * @param src
+ * @param dest
+ * @return
+ */
 string dijkstra(struct Graph* graph, int src, int dest)
 {
     int V = graph->V;// Get the number of vertices in graph
@@ -299,7 +389,12 @@ string dijkstra(struct Graph* graph, int src, int dest)
     return printArr(dist, src, dest);
 }
 
-
+/**
+ * @brief main se rea el grafo y los sockets para servidor
+ * @param argc
+ * @param argv
+ * @return
+ */
 int main(int argc, char *argv[])
 {
     int V = 9;
