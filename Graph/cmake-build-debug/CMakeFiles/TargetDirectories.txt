@@ -1,3 +1,0 @@
-/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/Graph.dir
-/home/natigb/Documents/EC1 Datos II/EC1_Datos-II/Graph/cmake-build-debug/CMakeFiles/edit_cache.dir
