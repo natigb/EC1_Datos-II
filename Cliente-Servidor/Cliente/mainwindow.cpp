@@ -73,28 +73,26 @@ void MainWindow::on_boton0_clicked()
     string str = to_string(src);
     str.append(to_string(dest));
 
-        //		Enter lines of text
-        //cout << "> ";
-        //getline(cin, userInput);
 
-        //		Send to server
+
+        //Enviar al servidor
         int sendRes = send(sock, str.c_str(), str.size() + 1, 0);
         if (sendRes == -1)
         {
-            cout << "Could not send to server! Whoops!\r\n";
+            cout << "No se pudo enviar";
 
         }
 
-        //		Wait for response
+        //Esperar respuesta
         memset(buf, 0, 4096);
         int bytesReceived = recv(sock, buf, 4096, 0);
         if (bytesReceived == -1)
         {
-            cout << "There was an error getting response from server\r\n";
+            cout << "Hubo un error obteniendo la respuesta";
         }
         else
         {
-            //		Display response
+            // Mostrar respuesta
             cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
 
             QString qstr = QString::fromStdString(string(buf, bytesReceived));
@@ -102,7 +100,7 @@ void MainWindow::on_boton0_clicked()
         }
 
 
-    //Close the socket
+    //Cerrar el socket
     //stop();
 
 
