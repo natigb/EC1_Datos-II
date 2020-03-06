@@ -16,7 +16,8 @@ using namespace std;
 
 
 /**
- * @brief The AdjListNode struct Estructura que representa a un nodo un una lista de adyacencia
+ * @brief The AdjListNode struct
+ * Estructura que representa a un nodo un una lista de adyacencia
  */
 struct AdjListNode
 {
@@ -27,7 +28,8 @@ struct AdjListNode
 
 // A structure to represent an adjacency list
 /**
- * @brief The AdjList struct Estructura de la lista de adyacencia, contiene un puntero señalando a la cabeza
+ * @brief The AdjList struct
+ * Estructura de la lista de adyacencia, contiene un puntero señalando a la cabeza
  */
 struct AdjList
 {
@@ -37,7 +39,8 @@ struct AdjList
 // A structure to represent a graph. A graph is an array of adjacency lists.
 // Size of array will be V (number of vertices in graph)
 /**
- * @brief The Graph struct Estructura para armar el grafo, contiene una lista de adyacencia y un atributo con el numero de vértices
+ * @brief The Graph struct
+ * Estructura para armar el grafo, contiene una lista de adyacencia y un atributo con el numero de vértices
  */
 struct Graph
 {
@@ -47,10 +50,11 @@ struct Graph
 
 // A utility function to create a new adjacency list node
 /**
- * @brief newAdjListNode Funcion para crear un nuevo nodo en la lista de adyacencia
+ * @brief newAdjListNode
+ * Funcion para crear un nuevo nodo en la lista de adyacencia
  * @param dest nodo que se agrega
  * @param weight peso
- * @return
+ * @return nodo creado
  *
  */
 struct AdjListNode* newAdjListNode(int dest, int weight)
@@ -65,9 +69,10 @@ struct AdjListNode* newAdjListNode(int dest, int weight)
 
 // A utility function that creates a graph of V vertices
 /**
- * @brief createGraph Estructura para crear un grafo con V vertices
- * @param V
- * @return
+ * @brief createGraph
+ * Estructura para crear un grafo con V vertices
+ * @param V tamaño del grafo
+ * @return grafo creado
  */
 struct Graph* createGraph(int V)
 {
@@ -86,8 +91,9 @@ struct Graph* createGraph(int V)
 
 // Adds an edge to an undirected graph
 /**
- * @brief addEdge funcion para agregar una arista nueva
- * @param graph el grafo al que se le quiere agregar
+ * @brief addEdge
+ * Funcion para agregar una arista nueva
+ * @param graph  grafo al que se le quiere agregar
  * @param src source
  * @param dest destination
  * @param weight peso
@@ -108,7 +114,8 @@ void addEdge(struct Graph* graph, int src, int dest, int weight)
 
 // Structure to represent a min heap node
 /**
- * @brief The MinHeapNode struct estructura para representar el min heap node
+ * @brief The MinHeapNode struct
+ * Estructura para representar el min heap node
  */
 struct MinHeapNode
 {
@@ -118,7 +125,8 @@ struct MinHeapNode
 
 // Structure to represent a min heap
 /**
- * @brief The MinHeap struct estructura para representar el min heap
+ * @brief The MinHeap struct
+ * Estructura para representar el min heap
  */
 struct MinHeap
 {
@@ -130,9 +138,10 @@ struct MinHeap
 
 // A utility function to create a new Min Heap Node
 /**
- * @brief newMinHeapNode estructura para crear un min heap node nuevo
- * @param v
- * @param dist
+ * @brief newMinHeapNode
+ * Estructura para crear un min heap node nuevo
+ * @param v tamaño
+ * @param dist distancia
  * @return
  */
 struct MinHeapNode* newMinHeapNode(int v, int dist)
@@ -146,9 +155,10 @@ struct MinHeapNode* newMinHeapNode(int v, int dist)
 
 // A utility function to create a Min Heap
 /**
- * @brief createMinHeap estructura para crear un min heap
+ * @brief createMinHeap
+ * Estructura para crear un min heap
  * @param capacity
- * @return
+ * @return el minHeap creado
  */
 struct MinHeap* createMinHeap(int capacity)
 {
@@ -164,9 +174,10 @@ struct MinHeap* createMinHeap(int capacity)
 
 // A utility function to swap two nodes of min heap. Needed for min heapify
 /**
- * @brief swapMinHeapNode hace swap de 2 nodos
- * @param a
- * @param b
+ * @brief swapMinHeapNode
+ * Hace swap de 2 nodos
+ * @param a Primer nodo
+ * @param b Segundo nodo
  */
 void swapMinHeapNode(struct MinHeapNode** a, struct MinHeapNode** b)
 {
@@ -179,8 +190,9 @@ void swapMinHeapNode(struct MinHeapNode** a, struct MinHeapNode** b)
 // This function also updates position of nodes when they are swapped.
 // Position is needed for decreaseKey()
 /**
- * @brief minHeapify actualiza la posicion de los nodos del heap
- * @param minHeap
+ * @brief minHeapify
+ * Actualiza la posicion de los nodos del heap
+ * @param minHeap el minHeap a cambiar
  * @param idx
  */
 void minHeapify(struct MinHeap* minHeap, int idx)
